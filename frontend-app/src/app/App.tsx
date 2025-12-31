@@ -1,9 +1,14 @@
 import React from 'react';
+import {
+  RouterProvider,
+} from "react-router-dom";
+import { routers } from '../lib/routers/router';
 
-function App() {
+const App: React.FC = () => {
+
   return (
     <div className="App">
-      <h1>alhamdulillah</h1>
+      <RouterProvider router={routers} />
     </div>
   );
 }
